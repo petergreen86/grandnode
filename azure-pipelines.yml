@@ -38,4 +38,4 @@ steps:
     Products: 'BD'
     BlackDuckService: 'blackduck'
     DetectVersion: 'latest'
-    DetectArguments: '--detect.tools=DETECTOR'
+    DetectArguments: '--detect.tools=DETECTOR --blackduck.trust.cert=true'
