@@ -32,3 +32,10 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: SynopsysDetectTask@2
+  inputs:
+    Products: 'BD'
+    BlackDuckService: 'blackduck'
+    DetectVersion: 'latest'
+    DetectArguments: '--detect.tools=DETECTOR'
